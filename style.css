@@ -1,0 +1,156 @@
+body {
+    background-color:#875053;
+    font-family: Arial, Helvetica, sans-serif;
+    color: bisque;
+    margin: 0px;
+    overflow-y: scroll;
+}
+.logo {
+    max-width: 80px;
+}
+
+.main-nav {
+    display: flex;
+    flex-direction: row;
+}
+nav a {
+    color: black;
+    font-size: 15px; /* Tamanho da fonte */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: inline-block; /* Faz com que o link se comporte como um bloco em linha */
+    margin: 0 0px; /* Espaçamento horizontal entre os links */
+    padding: 15px; /* Espaçamento interno do link */
+    text-align: center; /* Alinha o texto no centro */
+    text-decoration: none;  /*remove o sublinhado*/
+}
+.main-nav a:hover {
+    background-color: #875053;
+    color: bisque;
+}
+#search {
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+    min-width: 80hv;
+}
+#search input {
+    display: flex;
+    padding: 0.5em;
+    border: solid 1px black;
+    flex: 1px;
+    border-radius: 10px 10px 10px 10px;
+}
+#search button {
+    border: solid 1px black;
+    color: bisque;
+    background-color: #875053;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.group {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 1em;
+}
+.page-header {
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /*centralizando a barra de pesquisa no centro da pagina*/
+    align-items: flex-end;
+    background-color: #FFEED6;
+}
+.slide {
+    width: 100%;
+    min-height: 50vh;
+    background-color: hs1 (151, 20%, 26%);
+    color: hs1 (151, 74%, 91%);
+    display: flex;
+    flex-direction: column; /*column is vertical and row is horizontal*/
+    justify-content: center; 
+    align-items: center;
+    background-size: cover; /*esconde o numero do slide para tras da imagem*/
+    background-position: center;
+    aspect-ratio: 50%; /*define o tamanho da imagem no carrossel*/
+}
+
+.one {
+    background-image: url("images/pexels-photo-1123260.webp");
+}
+
+.two {
+    background-image: url("images/pexels-photo-248413.jpeg");
+}
+
+.three {
+    background-image: url("images/pexels-photo-391213.webp");
+}
+
+.four {
+    background-image: url("images/pexels-photo-434311.jpeg");
+}
+
+.five {
+    background-image: url("images/tuscany-grape-field-nature-51947.jpeg");
+}
+
+.slide p {
+    font-size: 3em;
+    text-shadow: 0px 0px 1px black;
+    background-color: rgba(177, 17, 17, 0.546); /*cor atras do texto do carrossel*/
+    min-width: 150px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 20px;
+    color: yellow;
+}
+
+.page-content {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 30px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    max-width: 50%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-body a {
+    color: bisque;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    padding: 0.5em;
+    border-radius: 10px 10px 10px 10px;
+}
+.page-footer {
+    margin-top: 3em; /*espaco entre a corpo de cima e o footer*/;
+    padding: 1em; /* espaco entre os links e o topo do footer*/
+    min-height: 12em;
+    background-color: #875053;
+}
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1em;
+}
+.social a {
+    display:block;
+    padding: 0.5em;
+    font-size: 2em;
+    color: black;
+}
