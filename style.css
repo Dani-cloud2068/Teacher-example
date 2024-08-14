@@ -1,6 +1,6 @@
 body {
     background-color:#875053;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: bisque;
     margin: 0px;
     overflow-y: scroll;
@@ -16,7 +16,7 @@ body {
 nav a {
     color: black;
     font-size: 15px; /* Tamanho da fonte */
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Montserrat", sans-serif;
     display: inline-block; /* Faz com que o link se comporte como um bloco em linha */
     margin: 0 0px; /* Espaçamento horizontal entre os links */
     padding: 15px; /* Espaçamento interno do link */
@@ -31,7 +31,7 @@ nav a {
     display: flex;
     flex-direction: row;
     padding: 1em;
-    min-width: 80hv;
+    min-width: 20em;
 }
 #search input {
     display: flex;
@@ -64,8 +64,8 @@ nav a {
 .slide {
     width: 100%;
     min-height: 50vh;
-    background-color: hs1 (151, 20%, 26%);
-    color: hs1 (151, 74%, 91%);
+    background-color: bisque;
+    color: bisque;
     display: flex;
     flex-direction: column; /*column is vertical and row is horizontal*/
     justify-content: center; 
@@ -73,6 +73,7 @@ nav a {
     background-size: cover; /*esconde o numero do slide para tras da imagem*/
     background-position: center;
     aspect-ratio: 50%; /*define o tamanho da imagem no carrossel*/
+    font-family: "Montserrat", sans-serif;
 }
 
 .one {
@@ -96,14 +97,14 @@ nav a {
 }
 
 .slide p {
-    font-size: 3em;
+    font-size: 2em;
     text-shadow: 0px 0px 1px black;
-    background-color: rgba(177, 17, 17, 0.546); /*cor atras do texto do carrossel*/
+    background-color: bisque; /*cor atras do texto do carrossel*/
     min-width: 150px;
     text-align: center;
     padding: 5px;
     border-radius: 20px;
-    color: yellow;
+    color: black;
 }
 
 .page-content {
@@ -125,16 +126,53 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* margin-top: auto; */
 }
-.card-body a {
+.card-body {
     color: bisque;
     text-decoration: none;
-    display: block;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
     text-align: center;
-    background-color: black;
+    /* background-color: black; */
     padding: 0.5em;
-    border-radius: 10px 10px 10px 10px;
+    /* border-radius: 10px 10px 10px 10px; */
+    flex: 1;
+}
+
+.card-title {
+    text-align: center;
+    /* margin-top: auto; */
+}
+
+.card-image {
+    aspect-ratio: 3/6;
+    object-fit: cover;
+    object-position: center;
+    /* margin-top: auto; */
+}
+
+.card-description {
+    flex: 1;
+}
+
+.card-button {
+    display: block;
+    background-color: black;
+    text-align: center;
+    padding: 0.5em;
+    color: bisque;
+    text-decoration: none;
+    border-radius: 5% 5% 5% 5%;
+}
+
+.price {
+    font-weight: bold;
+    text-align: center;
+}
+.price::before {
+    content: "$";
 }
 .page-footer {
     margin-top: 3em; /*espaco entre a corpo de cima e o footer*/;
@@ -145,7 +183,7 @@ img {
 .social {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
     gap: 1em;
 }
 .social a {
@@ -153,4 +191,34 @@ img {
     padding: 0.5em;
     font-size: 2em;
     color: black;
+}
+
+/* product slides */
+
+.product-one {
+    background-image: url("images/pexels-photo-1123260.webp");
+}
+
+.product-two {
+    background-image: url("images/pexels-photo-248413.jpeg");
+}
+
+.product-three {
+    background-image: url("images/istockphoto-163140861-2048x2048.jpg");
+}
+
+.about-content {
+    margin-top: 50px;
+    display: grid;
+    grid: 1fr;
+    column-gap: 20px;
+    /* row-gap: 30px; */
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.banner{
+    display: block;
+    margin: auto;
+    margin-top: 1em;
 }
